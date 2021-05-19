@@ -14,7 +14,7 @@
         $(document).ready(function() {
             $('form').submit(function() {
                 var city = $('input:text[name=city]').val();
-                $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=244c65a3d8fa83e98035d47c1f42753b', function(res) {
+                $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=4145614919f2dc9f03281f45ea26aaa1', function(res) {
                     var html_str = '';
                     html_str += "<h2>" + city + "</h2>";
                     html_str += "<p>" + "<b>Current Temperature:</b> " + res['main']['temp'] + " ℉</p>";
